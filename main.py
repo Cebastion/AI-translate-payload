@@ -4,7 +4,7 @@ import json
 import os
 import time
 
-client = genai.Client(api_key='AIzaSyDGeNtvpop3_wnLJyOXSTlO2CPyoPYUuOU')
+client = genai.Client(api_key=os.environ['GEMINI_API_KEY'])
 
 models = ['gemini-3.5-flash', 'gemini-3.1-flash-lite', 'gemini-3.1-pro-preview', 'gemini-3-flash-preview']
 languages = ['en', 'fr', 'it', 'pl', 'el', 'fi', 'nb', 'cs', 'de', 'pt', 'hu', 'ni', 'sl', 'ro', 'sk', 'is']
